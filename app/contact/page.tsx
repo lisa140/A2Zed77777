@@ -57,7 +57,7 @@ export default function ContactPage() {
 
         <div className="text-center mb-10">
           <h1 className="text-2xl md:text-3xl font-bold text-darkColor mb-2">Contact Us</h1>
-          <p className="text-gray-500 text-sm">We'd love to hear from you. Send us a message and we'll respond within 24 hours.</p>
+          <p className="text-gray-500 text-sm">We&apos;d love to hear from you. Send us a message and we&apos;ll respond within 24 hours.</p>
         </div>
 
         <div className="grid md:grid-cols-[38%_62%] gap-6 items-start">
@@ -66,7 +66,7 @@ export default function ContactPage() {
           <div className="bg-brand_green rounded-2xl p-8 text-white space-y-6">
             <div>
               <h2 className="text-xl font-bold mb-1">Get in Touch</h2>
-              <p className="text-white/70 text-sm">Reach out any time — we're here to help.</p>
+              <p className="text-white/70 text-sm">Reach out any time — we&apos;re here to help.</p>
             </div>
 
             <ul className="space-y-4">
@@ -140,7 +140,7 @@ export default function ContactPage() {
                 <div>
                   <p className="font-bold text-darkColor">Message sent!</p>
                   <p className="text-sm text-gray-400 mt-1">
-                    We'll get back to you within 24 hours.
+                    We&apos;ll get back to you within 24 hours.
                   </p>
                 </div>
                 <button

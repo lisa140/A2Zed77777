@@ -80,7 +80,7 @@ function DeleteDialog({
           <DialogTitle>Delete slide?</DialogTitle>
         </DialogHeader>
         <p className="text-sm text-gray-600">
-          This will permanently delete <strong>"{heading}"</strong>. This action
+          This will permanently delete <strong>&quot;{heading}&quot;</strong>. This action
           cannot be undone.
         </p>
         <DialogFooter className="gap-2">
@@ -513,7 +513,7 @@ export default function SlidesPage() {
           ) : slides.length === 0 ? (
             <div className="text-center py-24 text-gray-400">
               <p className="text-lg font-medium">No slides yet</p>
-              <p className="text-sm mt-1">Click "Add New Slide" to create the first one.</p>
+              <p className="text-sm mt-1">Click &quot;Add New Slide&quot; to create the first one.</p>
             </div>
           ) : (
             <div className="space-y-4">

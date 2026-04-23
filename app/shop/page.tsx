@@ -498,7 +498,7 @@ function ShopInner() {
           <div className="mb-3 inline-flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-600">
             <Search className="w-3.5 h-3.5 text-gray-400 shrink-0" />
             <span>
-              Results for: <strong className="text-gray-900">"{urlQ}"</strong>
+              Results for: <strong className="text-gray-900">&quot;{urlQ}&quot;</strong>
             </span>
             <Link
               href={clearSearchHref}

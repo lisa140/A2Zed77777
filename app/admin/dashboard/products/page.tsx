@@ -192,7 +192,7 @@ function DeleteDialog({
           <DialogTitle>Delete product?</DialogTitle>
         </DialogHeader>
         <p className="text-sm text-gray-600">
-          This will permanently delete <strong>"{name}"</strong>. This action
+          This will permanently delete <strong>&quot;{name}&quot;</strong>. This action
           cannot be undone.
         </p>
         <DialogFooter className="gap-2">

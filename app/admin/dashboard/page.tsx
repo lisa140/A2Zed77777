@@ -64,7 +64,7 @@ export default function AdminDashboardPage() {
               <span className="text-brand_green">, {adminEmail}</span>
             )}
           </h1>
-          <p className="text-sm text-gray-400 mt-0.5">Here's what's happening in your store</p>
+          <p className="text-sm text-gray-400 mt-0.5">Here&apos;s what&apos;s happening in your store</p>
         </header>
 
         {/* Stats */}

@@ -96,8 +96,9 @@ export default function AuthButtons() {
     try {
       await signInWithPopup(auth, googleProvider);
       // customer doc check happens in onAuthStateChanged
-    } catch (err: any) {
-      if (err.code !== "auth/popup-closed-by-user") {
+    } catch (err: unknown) {
+      const code = (err as { code?: string }).code;
+      if (code !== "auth/popup-closed-by-user") {
         setFormError("Sign in failed. Please try again.");
       }
     } finally {
@@ -112,7 +113,7 @@ export default function AuthButtons() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       closeAll();
-    } catch (err: any) {
+    } catch (err: unknown) {
       const msgs: Record<string, string> = {
         "auth/user-not-found":   "No account with that email.",
         "auth/wrong-password":   "Incorrect password.",
@@ -120,7 +121,8 @@ export default function AuthButtons() {
         "auth/invalid-email":    "Invalid email address.",
         "auth/too-many-requests": "Too many attempts. Try again later.",
       };
-      setFormError(msgs[err.code] ?? "Sign in failed. Please try again.");
+      const code = (err as { code?: string }).code ?? "";
+      setFormError(msgs[code] ?? "Sign in failed. Please try again.");
     } finally {
       setFormLoading(false);
     }
@@ -147,13 +149,14 @@ export default function AuthButtons() {
         orderCount: 0,
       });
       closeAll();
-    } catch (err: any) {
+    } catch (err: unknown) {
       const msgs: Record<string, string> = {
         "auth/email-already-in-use": "An account with this email already exists.",
         "auth/invalid-email":        "Invalid email address.",
         "auth/weak-password":        "Password is too weak.",
       };
-      setFormError(msgs[err.code] ?? "Sign up failed. Please try again.");
+      const code = (err as { code?: string }).code ?? "";
+      setFormError(msgs[code] ?? "Sign up failed. Please try again.");
     } finally {
       setFormLoading(false);
     }

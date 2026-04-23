@@ -25,8 +25,8 @@ export default function AboutPage() {
             and car parts, straight to your door in Zambia.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            Whether you're in Lusaka or anywhere across the country, we deliver. And if you can't
-            find what you're looking for, just ask — our Custom Order service means we'll go and
+            Whether you&apos;re in Lusaka or anywhere across the country, we deliver. And if you can&apos;t
+            find what you&apos;re looking for, just ask — our Custom Order service means we&apos;ll go and
             find it for you.
           </p>
         </div>

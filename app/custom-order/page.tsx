@@ -152,7 +152,7 @@ export default function CustomOrderPage() {
         <div>
           <h1 className="text-2xl font-bold text-darkColor mb-2 flex items-center justify-center gap-2">Request Submitted! <CheckCircle className="w-6 h-6 text-brand_green" /></h1>
           <p className="text-sm text-gray-400 max-w-xs">
-            We'll search for{" "}
+            We&apos;ll search for{" "}
             <strong className="text-darkColor">{submittedProduct}</strong>{" "}
             and get back to you within 24 hours.
           </p>
@@ -198,10 +198,10 @@ export default function CustomOrderPage() {
       {/* Hero */}
       <div className="bg-brand_green text-white py-10 px-4 text-center">
         <h1 className="text-2xl md:text-3xl font-bold mb-2">
-          Can't Find It? We'll Source It For You
+          Can&apos;t Find It? We&apos;ll Source It For You
         </h1>
         <p className="text-white/80 text-sm max-w-md mx-auto mb-8">
-          Tell us what you're looking for — we'll search China and get back to you with a price
+          Tell us what you&apos;re looking for — we&apos;ll search China and get back to you with a price
         </p>
         <div className="flex items-center justify-center gap-8 max-w-sm mx-auto">
           {[
@@ -371,7 +371,7 @@ export default function CustomOrderPage() {
 
               {user ? (
                 <div className="bg-gray-50 rounded-xl px-4 py-3 text-sm text-gray-500">
-                  We'll contact you on:{" "}
+                  We&apos;ll contact you on:{" "}
                   <span className="font-semibold text-darkColor">{contactDisplay}</span>
                 </div>
               ) : (

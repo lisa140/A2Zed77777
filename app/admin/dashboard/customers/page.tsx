@@ -136,7 +136,7 @@ function DeleteDialog({
           <DialogTitle>Delete customer?</DialogTitle>
         </DialogHeader>
         <p className="text-sm text-gray-600">
-          This will permanently remove <strong>"{name}"</strong> from your customer records. This action cannot be undone.
+          This will permanently remove <strong>&quot;{name}&quot;</strong> from your customer records. This action cannot be undone.
         </p>
         <DialogFooter className="gap-2">
           <Button variant="outline" onClick={onCancel}>Cancel</Button>

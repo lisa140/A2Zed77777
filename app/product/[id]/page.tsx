@@ -338,7 +338,8 @@ export default function ProductDetailPage() {
   const [sizeFlash,     setSizeFlash]     = useState(false);
 
   // Sentinel ref for mobile sticky bar (FIX 2)
-  const sentinelRef = useRef<HTMLDivElement>(null);
+  const sentinelRef    = useRef<HTMLDivElement>(null);
+  const toastTimerRef  = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [showStickyBar, setShowStickyBar] = useState(false);
 
   // Embla (mobile slider)
@@ -539,8 +540,6 @@ export default function ProductDetailPage() {
   const shopHref = `/shop?category=${encodeURIComponent(product.category)}`;
 
   // ── Handlers ──────────────────────────────────────────────────────────────
-
-  const toastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const showToast = (tp: ToastProduct) => {
     if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
