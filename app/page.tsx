@@ -1,12 +1,22 @@
+import CategoryIconRow from "@/components/CategoryIconRow";
 import Container from "@/components/Container";
 import HomeBanner from "@/components/HomeBanner";
-import { Button } from "@/components/ui/button";
+import FeaturedProducts from "@/components/FeaturedProducts";
 
 const HomePage = () => {
   return (
-    <Container className=" bg-white">
-      <HomeBanner />
-    </Container>
+    <div className="bg-white">
+      {/* Hero slider */}
+      <Container className="py-4 md:py-6">
+        <HomeBanner />
+      </Container>
+
+      {/* Category pill row — below the hero slider */}
+      <CategoryIconRow />
+
+      {/* Featured products grid */}
+      <FeaturedProducts />
+    </div>
   );
 };
 export default HomePage;
